@@ -123,9 +123,7 @@ class fits:
 		tau2_near_min = np.linspace(tau2_min-0.05,tau2_min+0.05,n_steps)
 		F_near_min = np.linspace(F_min-0.01,F_min+0.01,n_steps)
 
-		NLL_near_min_tau1 = []
-		NLL_near_min_tau2 = []
-		NLL_near_min_F = []
+		NLL_near_min_tau1, NLL_near_min_tau2, NLL_near_min_F = [], [], []
 
 		#Tau_1 ERROR
 		for i in range(n_steps):
